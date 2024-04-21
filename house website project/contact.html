@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hover Text on Images with Bootstrap</title>
+<link rel="stylesheet" href="style.css">
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+  <style>
+    /* Ensure the map fills the entire section */
+    #map {
+      height: 500px; /* Adjust height as needed */
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="./images/download.jpeg" alt="M&B Remodeling Logo">M&B Remodeling
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./work.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+      
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">123-456-7890</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <section class="black-section bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="mt-5 " style="color: black;">
+                        Let's Discuss <br>
+                        Your Next Project</h2>
+                    <p class="mt-5 " style="color: black;">Fill out the form, or call us to<br>
+                        set up a free in-home consultation.
+    
+                    </p>
+    
+                    <h6 class="mt-4 " style="color: black;">Service Areas:</h6>
+                    <p class="mt-2 " style="color: black;">San Francisco, Santa Clara, Alameda, San Mateo</p>
+                    <p class="mt-4 " style="color: black;">500 Terry Francine Street San Francisco, CA 94158</p>
+    
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Your Phone Number">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Address">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map-section">
+        <div id="map"></div>
+      </section>
+      
+      
+      
+
+    <section class="footer-section">
+        <div class="container">
+          <p>© 2035 by M&B Remodeling. Powered and secured by Wix</p>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </section>
+    
+      <script>
+        // Initialize and display the map
+        function initMap() {
+          var indiaCenter = { lat: 20.5937, lng: 78.9629 }; // Center coordinates of India
+      
+          // Create a new map centered at the specified location
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 5, // Adjust zoom level as needed
+            center: indiaCenter
+          });
+      
+          // You can add more markers or customize the map further as needed
+        }
+      </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

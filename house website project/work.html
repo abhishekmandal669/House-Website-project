@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hover Text on Images with Bootstrap</title>
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+<style>
+  .image-container {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+  }
+  .image-container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  .image-container img:hover {
+    filter: brightness(60%);
+  }
+  .image-text {
+    display: none;
+    position: absolute;
+    font-size: 1.2rem;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    bottom: 30px;
+
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .image-container:hover .image-text {
+    display: block;
+  }
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="./images/download.jpeg" alt="M&B Remodeling Logo">M&B Remodeling
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./work.html">Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">123-456-7890</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<section class="container">
+  <h2 class="text-center mt-5">Our Work</h2>
+  <p class="text-center mt-5">You’re invited to browse a selection of recently completed projects below.</p>
+  <div class="row justify-content-center">
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="image-container">
+        <img src="./images/bath.jpg" alt="Image 1">
+        <div class="image-text">Bathroom</div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="image-container">
+        <img src="./images/inter.jpg" alt="Image 2">
+        <div class="image-text">Interiors</div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="image-container">
+        <img src="./images/kit.jpg" alt="Image 3">
+        <div class="image-text">Kitchens</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="image-container">
+          <img src="./images/addition.jpg" alt="Image 1">
+          <div class="image-text">Additions</div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="image-container">
+          <img src="./images/inter.jpg" alt="Image 2">
+          <div class="image-text">Exteriors</div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="image-container">
+          <img src="./images/sunrooms.jpg" alt="Image 3">
+          <div class="image-text">Sunrooms</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+<section class="black-section mt-5">
+  <div class="container">
+    <h2>Create your dream home.</h2>
+    <h2>Tell us about your project today.</h2>
+    <button class="btn btn-light mt-5 light-button">Get A Free Estimate</button>
+  </div>
+</section>
+<!-- --------------------------------------footer---------------------------------------- -->
+
+<section class="footer-section">
+  <div class="container">
+    <p>© 2035 by M&B Remodeling. Powered and secured by Wix</p>
+    <ul class="social-icons">
+      <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+  </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
